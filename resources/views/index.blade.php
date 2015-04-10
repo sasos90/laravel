@@ -7,3 +7,7 @@
 @section("header")
     @include("header", ["title" => $title])
 @stop
+
+@section("footer")
+    @include("footer")
+@stop
