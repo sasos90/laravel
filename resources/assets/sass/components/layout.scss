@@ -1,0 +1,12 @@
+#nekaj {
+    position: relative;
+    .banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media screen and (max-width: $mobileWidth) {
+            background: red;
+        }
+    }
+}
+

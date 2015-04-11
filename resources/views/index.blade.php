@@ -1,7 +1,11 @@
 @extends("layout")
 
 @section("content")
-    My content included
+    <div id="nekaj">
+        <div class="banner">
+            My content included
+        </div>
+    </div>
 @stop
 
 @section("header")
