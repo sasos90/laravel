@@ -1,16 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-class StartController extends Controller {
-
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        
-    }
+class StartController extends MyController {
 
     /**
      * Show the application welcome screen to the user.
