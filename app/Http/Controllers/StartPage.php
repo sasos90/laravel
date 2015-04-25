@@ -1,6 +1,6 @@
 <?php namespace App\Http\Controllers;
 
-class StartController extends MyController {
+class StartPage extends MyController {
 
     /**
      * Show the application welcome screen to the user.
@@ -9,7 +9,7 @@ class StartController extends MyController {
      */
     public function index()
     {
-        return view('layout.index', ["title" => "My title"]);
+        return view('StartPage.index', ["title" => "My title"]);
     }
 
 }

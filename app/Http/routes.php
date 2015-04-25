@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('/', 'StartController@index');
+Route::get('/', 'StartPage@index');
 
 Route::controllers([
 	'auth' => 'Auth\AuthController',
