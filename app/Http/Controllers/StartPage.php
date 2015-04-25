@@ -9,7 +9,11 @@ class StartPage extends MyController {
      */
     public function index()
     {
-        return view('StartPage.index', ["title" => "My title"]);
+        return view('StartPage.index', [
+            "pageAdd"   =>  [
+                "title" => "My title"
+            ]
+        ]);
     }
 
 }

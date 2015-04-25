@@ -1,6 +1,6 @@
 <html>
 <head>
-    @include("layout.header", ["title" => $title])
+    @include("layout.header")
     @yield("headerAdditional")
 </head>
 <body>
