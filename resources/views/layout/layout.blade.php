@@ -1,11 +1,15 @@
 <html>
 <head>
-    @yield("headerSect")
+    @include("layout.header", ["title" => $title])
+    @yield("headerAdditional")
 </head>
 <body>
 <div class="content-wrapper" style="font-family: 'Open Sans', sans-serif; font-weight: 300;">
     @yield("contentSect")
-    @yield("footerSect")
 </div>
+<footer>
+    @include("layout.footer")
+    @yield("footerAdditional")
+</footer>
 </body>
 </html>
