@@ -1,5 +1,7 @@
 <?php namespace App\Http\Controllers;
 
+use Session;
+
 class StartPage extends MyController {
 
     /**
@@ -9,11 +11,17 @@ class StartPage extends MyController {
      */
     public function index()
     {
-        return view('StartPage.index', [
-            "pageAdd"   =>  [
-                "title" => "My title"
-            ]
-        ]);
+        if (Session::has("user") === true) {
+            // user is logged in
+            return "You're logged in :)";
+        } else {
+            // use not logged in
+            return view('StartPage.index', [
+                "pageAdd"   =>  [
+                    "title" => "My title"
+                ]
+            ]);
+        }
     }
 
 }
