@@ -1,1 +1,7 @@
-{"version":3,"sources":["components/layout.scss"],"names":[],"mappings":"AAAA;EACI,oBAAU,EAAA;EACd;IACQ,oBAAU;IACV,QAAK;IACL,SAAM,EAAA;IACN;MAJD;QAKK,iBAAY,EAAA,EAAA","file":"style.css","sourcesContent":["#nekaj {\n    position: relative;\n    .banner {\n        position: absolute;\n        top: 0;\n        left: 0;\n        @media screen and (max-width: $mobileWidth) {\n            background: red;\n        }\n    }\n}\n\n"],"sourceRoot":"/source/"}
+{
+"version": 3,
+"mappings": "AAAA,MAAO;EACH,QAAQ,EAAE,QAAQ;EAClB,cAAQ;IACJ,QAAQ,EAAE,QAAQ;IAClB,GAAG,EAAE,CAAC;IACN,IAAI,EAAE,CAAC;IACP,oCAA4C;MAJhD,cAAQ;QAKA,UAAU,EAAE,GAAG",
+"sources": ["../../resources/assets/templateSource/components/layout.scss"],
+"names": [],
+"file": "style.css"
+}
