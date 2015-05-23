@@ -1,0 +1,15 @@
+#nekaj {
+    position: relative;
+    .banner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        @include breakpoint($mw-460) {
+            background: white;
+        }
+    }
+}
+
+.secondhit {
+    background: gray;
+}
