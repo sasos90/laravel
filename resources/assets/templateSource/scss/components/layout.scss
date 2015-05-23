@@ -4,9 +4,12 @@
         position: absolute;
         top: 0;
         left: 0;
-        @media screen and (max-width: $mobileWidth) {
-            background: red;
+        @include breakpoint($mw-460) {
+            background: white;
         }
     }
 }
 
+.secondhit {
+    background: gray;
+}
