@@ -1,0 +1,24 @@
+{
+  "name": "Baller bower",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sasos90/laravel",
+  "authors": [
+    "Saso Sabotin <sasos90@gmail.com>"
+  ],
+  "description": "Baller description",
+  "main": "bower",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "breakpoint-sass": "~2.5.0"
+  },
+    "devDependencies": {
+    "components-font-awesome": "~4.3.0"
+  }
+}
