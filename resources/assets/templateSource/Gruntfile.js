@@ -43,10 +43,19 @@ module.exports = function(grunt) {
                 dest: '../../../public/js/all.js'
             }
         },
+        autoprefixer: {
+            dev: {
+                options: {
+
+                },
+                src: '../../../public/css/style.css',
+                dest: '../../../public/css/style.css'
+            }
+        },
         watch: {
             css: {
                 files: ['**/*.scss'],
-                tasks: ["sass:dev"]
+                tasks: ["sass:dev", "autoprefixer:dev"]
             },
             js: {
                 files: ["js/*.js"],
@@ -54,6 +63,6 @@ module.exports = function(grunt) {
             }
         }
     });
-    grunt.registerTask('default', ["sass:dev", "concat"]);
-    grunt.registerTask('livebuild', ["sass:dist", "concat", "uglify"]);
+    grunt.registerTask('default', ["sass:dev", "autoprefixer:dev", "concat"]);
+    grunt.registerTask('livebuild', ["sass:dist", "autoprefixer:dev", "concat", "uglify"]);
 }
