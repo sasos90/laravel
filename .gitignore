@@ -4,3 +4,5 @@ tags
 tags_sorted_by_file
 npm-debug.log
 .sass-cache
+public/css/*
+public/js/*
